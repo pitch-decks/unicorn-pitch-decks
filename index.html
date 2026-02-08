@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicorn Startup Pitch Decks</title>
+    <meta name="description"
+        content="Learn how founders of billion-dollar startups raised VC funding: 50+ real pitch deck examples from unicorns like Dropbox, Uber, Shopify, Canva, and more.">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Unicorn Startup Pitch Decks" />
+    <meta property="og:description" content="Learn how founders of billion-dollar startups raised VC funding: 50+ real pitch deck examples from unicorns like Dropbox, Uber, Shopify, Canva, and more." />
+    <meta property="og:site_name" content="Unicorn Pitch Decks" />
+    <meta property="og:image" content="https://unicornpitchdeck.com/opengraph.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://unicornpitchdeck.com/opengraph.jpg" />
+    <meta name="twitter:description" content="Learn how founders of billion-dollar startups raised VC funding: 50+ real pitch deck examples from unicorns like Dropbox, Uber, Shopify, Canva, and more." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="unicorn-pitch-decks.svg">
+    <link rel="apple-touch-icon" href="unicorn-pitch-decks.svg" />
+    <meta name="msapplication-TileImage" content="unicorn-pitch-decks.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" target="_blank" href="https://fonts.googleapis.com">
+    <link rel="preconnect" target="_blank" href="https://fonts.gstatic.com" crossorigin>
+    <link target="_blank"
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Funnel+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        accent: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    },
+                    fontFamily: {
+                        'body': ['Geist', 'system-ui', 'sans-serif'],
+                        'heading': ['"Funnel Sans"', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Geist', system-ui, sans-serif;
+        }
+
+        .font-heading {
+            font-family: 'Funnel Sans', system-ui, sans-serif;
+            font-weight: 100;
+            letter-spacing: -0.05em !important;
+        }
+
+        .grid h3.font-semibold.text-lg {
+            font-family: 'Funnel Sans', system-ui, sans-serif;
+            font-weight: 500 !important;
+            font-size: 1.25rem;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 4px;
+        }
+
+        .dark ::-webkit-scrollbar-thumb {
+            background: #374151;
+        }
+
+        /* Card hover effect */
+        .deck-card {
+            transition: all 0.2s ease;
+        }
+
+        .deck-card:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Infinite scroll animation */
+        .logo-scroll {
+            animation: scroll 30s linear infinite;
+        }
+
+        .logo-scroll:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Subtle grain texture */
+        .grain::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.015;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        .dark .grain::before {
+            opacity: 0.03;
+        }
+    </style>
+</head>
+
+<body class="grain bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 antialiased">
+
+    <!-- Header -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a target="_blank" href="/" class="flex items-center gap-2">
+                    <img src="unicorn-pitch-decks.svg" alt="Unicorn Pitch Decks" class="w-6 h-6 sm:w-8 sm:h-8">
+                    <span class="font-heading text-base sm:text-xl font-semibold">Unicorn Pitch Decks</span>
+                </a>
+
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <a target="_blank" href="https://bestpitchdeck.com?ref=upd.com"
+                        class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                        Browse All Decks
+                    </a>
+                    <button id="theme-toggle"
+                        class="p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400 text-sm font-medium mb-6">
+                <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
+                50+ Billion-Dollar Decks
+            </div>
+
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6">
+                <span class="text-accent-600 dark:text-accent-400">Unicorn</span> Startup Pitch Decks
+            </h1>
+            <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-4xl mx-auto mb-8">
+                See how founders of billion-dollar startups successful raised early VC funding: 50+ real pitch deck examples from unicorns like Dropbox, Uber, Shopify, Canva, and more.
+            </p>
+        </div>
+
+        <!-- Infinite Scrolling Logo Cards -->
+        <div class="relative overflow-hidden mb-10">
+            <!-- Gradient overlays -->
+            <div
+                class="absolute left-0 top-0 bottom-0 w-24 sm:w-40 bg-gradient-to-r from-white dark:from-neutral-950 to-transparent z-10 pointer-events-none">
+            </div>
+            <div
+                class="absolute right-0 top-0 bottom-0 w-24 sm:w-40 bg-gradient-to-l from-white dark:from-neutral-950 to-transparent z-10 pointer-events-none">
+            </div>
+
+            <!-- Scrolling container -->
+            <div class="logo-scroll flex gap-4 py-2">
+                <!-- First set of cards -->
+                <a href="#deck-airbnb"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #FF5A5F;">
+                    <img src="logo-icons/airbnb.svg" alt="Airbnb"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-uber"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #000000;">
+                    <img src="logo-icons/uber.svg" alt="Uber"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-dropbox"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #0061FF;">
+                    <img src="logo-icons/dropbox.svg" alt="Dropbox"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-linkedin"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #0A66C2;">
+                    <img src="logo-icons/linkedin.svg" alt="LinkedIn"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-canva"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: linear-gradient(135deg, #00C4CC, #7D2AE8);">
+                    <img src="logo-icons/canva.svg" alt="Canva"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-tinder"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: linear-gradient(135deg, #FD297B, #FF5864, #FF655B);">
+                    <img src="logo-icons/tinder.svg" alt="Tinder"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-shopify"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #96BF48;">
+                    <img src="logo-icons/shopify.svg" alt="Shopify"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-wise"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #163300;">
+                    <img src="logo-icons/wise.svg" alt="Wise"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-facebook"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #1877F2;">
+                    <img src="logo-icons/facebook.svg" alt="Facebook"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-tesla"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #CC0000;">
+                    <img src="logo-icons/tesla.svg" alt="Tesla"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-youtube"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #FF0000;">
+                    <img src="logo-icons/youtube.svg" alt="YouTube"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-snapchat"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #FFFC00;">
+                    <img src="logo-icons/snapchat.svg" alt="Snapchat" class="w-10 h-10 sm:w-12 sm:h-12 object-contain">
+                </a>
+                <!-- Duplicate set for seamless loop -->
+                <a href="#deck-airbnb"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #FF5A5F;">
+                    <img src="logo-icons/airbnb.svg" alt="Airbnb"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-uber"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #000000;">
+                    <img src="logo-icons/uber.svg" alt="Uber"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-dropbox"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #0061FF;">
+                    <img src="logo-icons/dropbox.svg" alt="Dropbox"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-linkedin"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #0A66C2;">
+                    <img src="logo-icons/linkedin.svg" alt="LinkedIn"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-canva"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: linear-gradient(135deg, #00C4CC, #7D2AE8);">
+                    <img src="logo-icons/canva.png" alt="Canva"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-tinder"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: linear-gradient(135deg, #FD297B, #FF5864, #FF655B);">
+                    <img src="logo-icons/tinder.svg" alt="Tinder"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-shopify"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #96BF48;">
+                    <img src="logo-icons/shopify.svg" alt="Shopify"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-wise"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #163300;">
+                    <img src="logo-icons/wise.svg" alt="Wise"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-facebook"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #1877F2;">
+                    <img src="logo-icons/facebook.svg" alt="Facebook"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-tesla"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #CC0000;">
+                    <img src="logo-icons/tesla.svg" alt="Tesla"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-youtube"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #FF0000;">
+                    <img src="logo-icons/youtube.svg" alt="YouTube"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain brightness-0 invert">
+                </a>
+                <a href="#deck-snapchat"
+                    class="logo-card hover:shadow-lg flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl flex items-center justify-center transition-transform hover:scale-105"
+                    style="background: #FFFC00;">
+                    <img src="logo-icons/snapchat.svg" alt="Snapchat" class="w-10 h-10 sm:w-12 sm:h-12 object-contain">
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div class="relative w-full sm:w-96">
+                    <input type="text" id="search-input" placeholder="Search pitch decks..."
+                        class="w-full px-4 py-3 pl-12 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all">
+                    <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <a href="#decks"
+                    class="px-6 py-3 rounded-xl bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-medium hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors">
+                    View All Decks →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-6 border-y border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-auto">
+            <div
+                class="flex items-center justify-start sm:justify-center gap-x-6 text-base text-neutral-700 dark:text-neutral-300 whitespace-nowrap min-w-max">
+                <span>Seed to Series E round</span>
+                <span class="w-2 h-2 rounded-full bg-accent-500 flex-shrink-0"></span>
+                <span>$2.5B+ total funding raised</span>
+                <span class="w-2 h-2 rounded-full bg-accent-500 flex-shrink-0"></span>
+                <span>$500B+ enterprise value</span>
+                <span class="w-2 h-2 rounded-full bg-accent-500 flex-shrink-0"></span>
+                <span>No sign-in, free forever</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Slides Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-neutral-50 dark:bg-neutral-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-light tracking-tight mb-4 text-center">
+                <span class="text-accent-600 dark:text-accent-400">Must-see</span> slides from unicorn pitch
+                decks</span>
+            </h2>
+            <p class="text-center text-neutral-600 dark:text-neutral-400 mb-6 max-w-2xl mx-auto">
+                Here are some of our favorite slides from pitch decks that raised early funding for billion-dollar startups. <a href="#decks" class="text-accent-600 dark:text-accent-400 hover:underline">Skip ahead to the full list of decks →</a>
+            </p>
+            <!-- Template CTA Banner -->
+            <div class="max-w-4xl mx-auto mb-10">
+                <a target="_blank" href="https://bestpitch.es/turnkey-pitch-deck-template?ref=unicornpitchdeck.com"
+                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 px-5 py-4 rounded-xl bg-neutral-900 dark:bg-neutral-800 hover:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors">
+                    <!-- Mobile layout -->
+                    <div class="sm:hidden">
+                        <span class="text-white font-semibold text-base block mb-1">Raising VC funding?</span>
+                        <span class="text-neutral-300 text-sm">Try the <span class="text-accent-400">only pitch deck template made by VC-backed founders</span>.</span>
+                    </div>
+                    <!-- Desktop layout -->
+                    <span class="hidden sm:block text-white">Raising VC funding? Try the <u>only pitch deck template made by VC-backed founders</u>.</span>
+                    <span class="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent-600 hover:bg-accent-700 text-white text-sm sm:text-base font-semibold whitespace-nowrap transition-colors">
+                        Download &rarr;
+                    </span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Airbnb -->
+                <a target="_blank" href="https://bestpitchdeck.com/airbnb?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="overflow-hidden">
+                        <img src="slides/airbnb-pitch-deck_slide-8-business-model.jpg" alt="Airbnb pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/airbnb.png" alt="Airbnb" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                Airbnb</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">This 2008 seed pitch deck is arguably
+                            the most iconic of all time and set the foundation for common pitch deck formulas (no
+                            coincident given both founders, Brian Chesky and Joe Gebbia, were RISD-educated designers).
+                            This business model slide demonstrates how startups can simplify complex narratives with
+                            incredibly simple visuals.
+                            <!-- <a href="https://vip.graphics/pitch-deck-slides/?ref=upd.com#recipe" target="_blank" >pitch deck formulas</a>  -->
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Canva -->
+                <a target="_blank" href="https://bestpitchdeck.com/canva?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="overflow-hidden">
+                        <img src="slides/canva-pitch-deck_market-slide.png" alt="Canva pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/canva.png" alt="Canva" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                Canva</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Canva's (originally Canvas Chef) founders (Melanie Perkins and Cliff Obrecht) were initially
+                            rejected by over 100 investors! This is a must-read for first-time founders as you can see how Canva's deck evolves across 3+ iterations. Though it seemed Adobe had a monopoly on digital design, Canva’s pitch deck clearly articulated a vision for carving out a new category of accessible design tools for the masses.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Tinder -->
+                <a target="_blank" href="https://bestpitchdeck.com/tinder?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="overflow-hidden">
+                        <img src="slides/tinder-pitch-deck.jpg" alt="Tinder pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/tinder.png" alt="Tinder" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                Tinder</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Tinder was originally born as Matchbox
+                            in 2012 at the Hatch Labs accelerator program. In this early deck, you can see the
+                            foundations of the dating app's famous swipe-based interface and photo-centric UI. Fun fact:
+                            they planned to charge $1 per match at first!</p>
+                    </div>
+                </a>
+
+                <!-- Peloton -->
+                <a target="_blank" href="https://bestpitchdeck.com/peloton?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="overflow-hidden">
+                        <img src="slides/peloton-2011-pitch-deck-slides.jpg" alt="Peloton pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/peloton.png" alt="Peloton" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                Peloton</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Peloton's pitch deck showcases the founder's incredibly detailed early vision for the product experience: with rough mock-ups of the interface and app created natively in PowerPoint using Microsoft shapes! This exemplifies inside how founders can pitch a startup long before they final product is built.</p>
+                    </div>
+                </a>
+
+
+                <!-- Uber -->
+                <a target="_blank" href="https://bestpitchdeck.com/uber?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="overflow-hidden">
+                        <img src="slides/uber-seed-pitch-deck.jpg" alt="Uber pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/uber.png" alt="Uber" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                Uber</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">When Travis Kalanick and Garrett Camp
+                            raised funding for Uber (originally UberCab) in late 2008, they didn't even have an app or
+                            any drivers yet. However, their pitch deck shared a detailed vision for the product (ie.
+                            mobile booking, live fleet view) + perfectly predicted use cases like airports and trips
+                            from venues with limited parking.</p>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a target="_blank" href="https://bestpitchdeck.com/linkedin?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="overflow-hidden">
+                        <img src="slides/linkedin-series-b-pitch-deck.png" alt="LinkedIn pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/linkedin.png" alt="LinkedIn" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                LinkedIn</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">LinkedIn's deck from 2004 offers a
+                            unique look at at how Reid Hoffman thought about Web 2.0 and understood early that networks
+                            would be the future of the internet. He drew parallels between LinkedIn, PayPal, Google, and
+                            other famous dot-com era success stories. This $10M Series B deck is a whopping 50+ slides
+                            long!</p>
+                    </div>
+                </a>
+
+                <!-- Rippling -->
+                <a target="_blank" href="https://bestpitchdeck.com/rippling?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="slides/rippling-pitch-deck.jpg" alt="Rippling pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/rippling.png" alt="Rippling" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                Rippling</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Rippling (founded by former Zenefits
+                            CEO Parker Conrad) has exemplified defying conventional wisdom. In 2019, they raised a $45M
+                            Series A round led by Kleiner Perkins without a pitch deck: instead opting for an investor
+                            memo accompanied by a brief metrics-only deck. The memo speaks to how Rippling pioneered the
+                            "compound startup" model, which diverges from the prevailing VC wisdom that startups should
+                            focus on doing “only one thing.”</p>
+                    </div>
+                </a>
+
+                <!-- Mistral -->
+                <a target="_blank" href="https://bestpitchdeck.com/brex?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="slides/brex-pitch-deck_problem-slide.jpg" alt="Brex pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/brex.png" alt="Brex" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                Brex</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Fintech startup Brex
+                            was founded by Henrique Dubugras and Pedro Franceschi (who previously exited PagarMe) to
+                            disrupt corporate cards for startups. Brex sold to Capital One for $5.15 billion in January
+                            2026, netting early seed investors like Y Combinator and Ribbit Capital billions.
+                            Ironically, the problem slide in Brex's Series B pitch deck included a photo of Capital One
+                            as one of the corporate cards that commonly rejected startups.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Postmates -->
+                <a id="deck-postmates" target="_blank" href="https://bestpitchdeck.com/postmates?ref=upd.com"
+                    class="group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="slides/postmates-pitch-deck_traction-slide.jpg" alt="Brex pitch deck slide"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="logos/postmates.png" alt="Postmates" class="w-8 h-8 rounded-lg object-contain">
+                            <h3
+                                class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                Postmates</h3>
+                        </div>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Postmates 2011 pitch deck shows how
+                            small billion-dollar startups were when they began: the on-demand delivery startup first
+                            launched
+                            in San Francisco with ~200 couriers in 2011, and quickly expanded to Seattle in 2013.
+                            Postmates sold to Uber for $2.65 billion less than ten years later. Founder Bastian Lehmann
+                            latered claimed in an April 2025 tweet that the Doordash founders may have gained an edge by
+                            seeing this "deck while being an intern at Matrix Partners."</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pitch Decks Grid -->
+    <section id="decks" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl sm:text-3xl font-light tracking-tight">
+                    Browse pitch decks from <span class="text-accent-600 dark:text-accent-400">billion-dollar</span>
+                    startups <span class="text-neutral-500">↓</span>
+                </h2>
+                <div class="text-sm text-neutral-500" id="deck-count">51 decks</div>
+            </div>
+
+            <div id="decks-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Postmates -->
+                <a target="_blank" href="https://bestpitchdeck.com/postmates?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://postmates.com"
+                                alt="Postmates logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Postmates</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$750k</span>
+                                    <span>2011</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Food delivery service Postmates was acquired by
+                            Uber for $2.65 billion in 2020. At the time, Postmates partnered with over 600,000 restaurants, retailers, grocers, and more. Postmates raised $750k from AngelPad (Lead),
+                            Crosslink Capital, and Uncork Capital with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- GitLab -->
+                <a target="_blank" href="https://bestpitchdeck.com/gitlab?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://gitlab.com"
+                                alt="Gitlab logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    GitLab</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$1.5M</span>
+                                    <span>2015</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal"> Open-source DevSecOps platform Gitlab streamlines the process of planning, developing, securing and deploying software. $NASDAQ:GTLB reached a $15 billion market cap on its first day of trading. GitLab raised $1.5M from Khosla Ventures (Lead) and Y Combinator with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Dropbox -->
+                <a id="deck-dropbox" target="_blank" href="https://bestpitchdeck.com/dropbox?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://dropbox.com"
+                                alt="Dropbox logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Dropbox</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$1.2M</span>
+                                    <span>2007</span>
+                                    <span>•</span>
+                                    <span>Pre-Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Cloud collaboration startup Dropbox was an early pioneer in the file sharing and cloud storage space. The company was valued over $9 billion at IPO ($NASDAQ:DBX). Dropbox raised $1.2M from Sequoia Capital (Lead), Y Combinator, and Pejman Nozad with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B,
+                                B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Paddle -->
+                <a target="_blank" href="https://bestpitchdeck.com/paddle?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://paddle.com"
+                                alt="Paddle logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Paddle</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$200M</span>
+                                    <span>2022</span>
+                                    <span>•</span>
+                                    <span>Series D</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">UK-based payment startup Paddle empowers software companies to manage trials, licenses, payments, analytics and more via a unified platform. Paddle raised $200M at a $1.4 billion valuation from KKR (Lead), 83North, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Firework -->
+                <a target="_blank" href="https://bestpitchdeck.com/firework?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://firework.com"
+                                alt="Firework logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Firework</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$150M</span>
+                                    <span>2022</span>
+                                    <span>•</span>
+                                    <span>Series B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Video marketing platform Firework creates live streaming and short-form shoppable videos for eCommerce brands. Firework raised $150M from SoftBank Vision Fund 2 (Lead), Lightspeed Venture Partners, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Branch -->
+                <a target="_blank" href="https://bestpitchdeck.com/branch?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://ourbranch.com"
+                                alt="Branch logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Branch</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$147M</span>
+                                    <span>2022</span>
+                                    <span>•</span>
+                                    <span>Series C</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Insurtech startup Branch provides instant bundled home and auto insurance quotes. Branch raised $147M at a $1.05 billion valuation from Foundation Capital (Lead), Crosslink Capital, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Airbnb -->
+                <a id="deck-airbnb" target="_blank" href="https://bestpitchdeck.com/airbnb?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://airbnb.com"
+                                alt="Airbnb logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Airbnb</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$600K</span>
+                                    <span>2008</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Airbnb's marketplace platform connects travelers and hosts for short-term (and long-term) rentals. The company was valued over $47 billion at IPO ($NASDAQ:ABNB). Airbnb raised $600K from Sequoia Capital (Lead), Y Combinator, and Greg McAdoo with this deck </p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C,
+                                B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Facebook -->
+                <a id="deck-facebook" target="_blank" href="https://bestpitchdeck.com/facebook?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://facebook.com"
+                                alt="Facebook logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Facebook</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$500K</span>
+                                    <span>2004</span>
+                                    <span>•</span>
+                                    <span>Early Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Facebook (now the conglomerate known as Meta) initially launched as a free social media platform to connect with friends, family, businesses, and brands. The company was valued over $104 billion at IPO ($NASDAQ:META). Facebook raised $500K from Peter Thiel (Lead) around the time they were using this pitch deck for business development.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Uber -->
+                <a id="deck-uber" target="_blank" href="https://bestpitchdeck.com/uber?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://uber.com"
+                                alt="Uber logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Uber</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$200K</span>
+                                    <span>2008</span>
+                                    <span>•</span>
+                                    <span>Early Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Uber's ridesharing platform connects nearby drivers and passengers in real-time via a mobile-first marketplace. The company was valued over $82 billion at IPO ($NYSE:UBER). Uber raised $200K from First Round Capital (Lead), Alfred Lin, and Chris Sacca with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a id="deck-linkedin" target="_blank" href="https://bestpitchdeck.com/linkedin?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://linkedin.com"
+                                alt="Linkedin logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    LinkedIn</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$10M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Series B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">LinkedIn is the world's largest online professional network, founded by Reid Hoffman (formerly @ PayPal). LinkedIn was acquired by Microsoft for $26.2 billion in 2016. LinkedIn raised $10M from Greylock Partners (Lead), Sequoia
+                            Capital, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B,
+                                B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Tesla -->
+                <a id="deck-tesla" target="_blank" href="https://bestpitchdeck.com/tesla?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://tesla.com"
+                                alt="Tesla logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Tesla</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$192M</span>
+                                    <span>2011</span>
+                                    <span>•</span>
+                                    <span>Late Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Tesla Motors, led by CEO Elon Musk produces electric vehicles (EVs), clean energy storage systems, charger networks, and AI vehicle software. The company was valued over $1.7 billion at IPO ($NASDAQ:TSLA). Tesla raised $192M from Daimler (Lead), Toyota, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- YouTube -->
+                <a id="deck-youtube" target="_blank" href="https://bestpitchdeck.com/youtube?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://youtube.com"
+                                alt="Youtube logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    YouTube</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$3.5M</span>
+                                    <span>2005</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">YouTube is the world's most popular video-sharing platform, and was acquired by Google for $1.65 billion in 2006 (less than two years after launching). YouTube raised $3.5M from Sequoia Capital (Lead) and Artis Capital Management with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- DoorDash -->
+                <a id="deck-doordash" target="_blank" href="https://bestpitchdeck.com/doordash?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://doordash.com"
+                                alt="Doordash logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    DoorDash</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$2.4M</span>
+                                    <span>2013</span>
+                                    <span>•</span>
+                                    <span>Early Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">DoorDash provides delivery services for local restaurants, groceries, and businesses. The company was valued over $39 billion at IPO ($NASDAQ:DASH). After graduating from Y Combinator, DoorDash raised $2.4M from Khosla Ventures (Lead), Charles River Ventures, and SV Angel with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Snapchat -->
+                <a id="deck-snapchat" target="_blank" href="https://bestpitchdeck.com/snapchat?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://snapchat.com"
+                                alt="Snapchat logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Snapchat</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$50M</span>
+                                    <span>2013</span>
+                                    <span>•</span>
+                                    <span>Pre-Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Snapchat's flagship social media app and accompanying hardware products focus on temporary sharing of multimedia "Snaps." The company was valued over $24 billion at IPO ($NYSE:SNAP). Snapchat raised $50M from Institutional Venture Partners (Lead), Lightspeed Venture Partners, and others around the time they were using this deck for sales.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Coinbase -->
+                <a target="_blank" href="https://bestpitchdeck.com/coinbase?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://coinbase.com"
+                                alt="Coinbase logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Coinbase</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$600K</span>
+                                    <span>2012</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Coinbase is a digital currency exchange that allows traders to buy and sell cryptocurrencies. The company was valued over $85 billion at IPO ($NASDAQ:COIN).Coinbase raised $600K from Y Combinator (Lead), Alexis Ohanian, and Garry Tan with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Shopify -->
+                <a id="deck-shopify" target="_blank" href="https://bestpitchdeck.com/shopify?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://shopify.com"
+                                alt="Shopify logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Shopify</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$66M</span>
+                                    <span>2016</span>
+                                    <span>•</span>
+                                    <span>Late Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Shopify is the world's most-used eCommerce platform, serving businesses of all sizes. The company was valued over $1.27 billion at IPO ($NYSE:SHOP). Shopify raised $66M from OMERS Ventures (Lead), Insight Partners, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Twilio -->
+                <a target="_blank" href="https://bestpitchdeck.com/twilio-series-b?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://twilio.com"
+                                alt="Twilio logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Twilio</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$120M</span>
+                                    <span>2010</span>
+                                    <span>•</span>
+                                    <span>Series B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Twilio's communications APIs makes it easy for software developers to integrate voice, messaging, email, and video capabilities into applications. The company was valued over $1.2 billion at IPO ($NYSE:TWLO). Twilio raised $120M from Bessemer Venture Partners (Lead), Union Square Ventures, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Brex -->
+                <a target="_blank" href="https://bestpitchdeck.com/brex?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://brex.com"
+                                alt="Brex logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Brex</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$57M</span>
+                                    <span>2018</span>
+                                    <span>•</span>
+                                    <span>Series B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Fintech startup Brex offers payment, expenses, and accounting solutions tailored for startups. Brex was acquired by Capital One for over $5 billion in January 2026. Brex raised $57M from Y Combinator (Lead), Ribbit Capital, and DST Global with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Figma -->
+                <a target="_blank" href="https://bestpitchdeck.com/figma?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://figma.com"
+                                alt="Figma logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Figma</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$3.8M</span>
+                                    <span>2013</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Digital design startup Figma provides cloud collaboration tools for designing and prototyping websites, apps, and more. Figma raised $3.8M from Greylock Partners (Lead), Index Ventures, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Tinder -->
+                <a id="deck-tinder" target="_blank" href="https://bestpitchdeck.com/tinder?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://tinder.com"
+                                alt="Tinder logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Tinder</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$50M</span>
+                                    <span>2016</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Dating app Tinder connects nearby people through it's iconic mobile swipe interface. Tinder merged with Match.com at a valuation of over $3 billion. Tinder raised $50M from IAC (Lead) and Benchmark with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Canva -->
+                <a id="deck-canva" target="_blank" href="https://bestpitchdeck.com/canva?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://canva.com"
+                                alt="Canva logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Canva</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$6.6M</span>
+                                    <span>2015</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Canva's novice-friendly online design platform makes it easy to create social graphics, ads, posters, documents and more. Canva raised $6.6M from Matrix Partners (Lead),
+                            InterWest Partners, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Perplexity AI -->
+                <a target="_blank" href="https://bestpitchdeck.com/perplexity-ai?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://www.perplexity.ai/"
+                                alt="Perplexity AI logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Perplexity AI</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$73.6M</span>
+                                    <span>2024</span>
+                                    <span>•</span>
+                                    <span>Series B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Perplexity is an AI-powered search engine that aims to provide direct answers to questions from the web. Perplexity AI raised $73.6M from IVP (Lead), NEA, and Elad Gil with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Replit -->
+                <a target="_blank" href="https://bestpitchdeck.com/replit?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://replit.com"
+                                alt="Replit logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Replit</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$120k</span>
+                                    <span>2016</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Replit provides a cloud-based integrated development environment (IDE) to collaborate, develop, and deploy software pn;one. Replit raised $120k from Y Combinator (Lead) and Bloomberg Beta with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Rippling -->
+                <a target="_blank" href="https://bestpitchdeck.com/rippling?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://rippling.com"
+                                alt="Rippling logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Rippling</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$45M</span>
+                                    <span>2019</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">HRIS platform Rippling combines HR, IT, and finance operations into one unified system. Rippling raised $45M from Kleiner Perkins (Lead), Initialized Capital, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- WeWork -->
+                <a id="deck-wework" target="_blank" href="https://bestpitchdeck.com/wework?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://wework.com"
+                                alt="WeWork logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    WeWork</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$335M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Late Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">WeWork provides shared workspaces and offices for startups and businesses (space-as-a-service) around the globe. The company was valued over $9 billion at IPO ($NYSE:WE). WeWork raised $335M at a $5 billion valuation from JPMorgan Chase (Lead), T. Rowe Price, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Peloton -->
+                <a target="_blank" href="https://bestpitchdeck.com/peloton?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://onepeloton.com"
+                                alt="Peloton logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Peloton</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$400k</span>
+                                    <span>2012</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Peloton produces connected fitness hardware (stationary bikes, treadmills) and a library of studio classes taught by elite instructors. The company was valued over $8.1 billion at IPO ($NASDAQ:PTON).Peloton raised $400k from True Ventures (Lead), Tiger Global, and Felix Capital.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Ring -->
+                <a target="_blank" href="https://bestpitchdeck.com/ring?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://ring.com"
+                                alt="Ring logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Ring</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$4M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">IoT startup Ring (originally Doorbot) producecs home security products such as their flagship doorbells that incorporate outdoor surveillance cameras. Ring was acquired by Amazon for $1 billion in 2018. Ring raised $4M from DFJ (Lead), Goldman Sachs, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Gusto -->
+                <a target="_blank" href="https://bestpitchdeck.com/gusto?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://gusto.com"
+                                alt="Gusto logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Gusto</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$20M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Gusto, formerly ZenPayRoll, provides a unified platform to manage payroll, benefits, and HR in one place. Gusto raised $20M from General Catalyst (Lead), Kleiner Perkins, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Mixpanel -->
+                <a target="_blank" href="https://bestpitchdeck.com/mixpanel?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://mixpanel.com"
+                                alt="Mixpanel logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Mixpanel</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$65M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Series B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Mixpanel's analytics platform helps companies make data-driven decisions to improve their products. Mixpanel raised $65M from Andreessen Horowitz (Lead), Sequoia Capital, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- BuzzFeed -->
+                <a target="_blank" href="https://bestpitchdeck.com/buzzfeed?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://buzzfeed.com"
+                                alt="Buzzfeed logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    BuzzFeed</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$3.5M</span>
+                                    <span>2008</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">BuzzFeed is an online news and entertainment company founded in 2006 by Jonah Peretti, John S. Johnson III, and Kenneth Lerer. The company was valued over $1.5 billion at IPO ($NASDAQ:BZFD). BuzzFeed raised $3.5M from SoftBank (Lead), Hearst, and RRE Ventures with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Loom -->
+                <a target="_blank" href="https://bestpitchdeck.com/loom?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://www.loom.com"
+                                alt="Loom logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Loom</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$3M</span>
+                                    <span>2017</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Video collaboration platform Loom enables teams to communicate asynchronously instead of unnecessary meetings or calls. Loom was acquired by Atlassian for $975 million in 2023. Loom raised $3M from Andreessen Horowitz (Lead), Kleiner Perkins, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Databricks -->
+                <a target="_blank" href="https://bestpitchdeck.com/databricks-series-a?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://databricks.com"
+                                alt="Databricks logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Databricks</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$14M</span>
+                                    <span>2013</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">One of the highest-valued private companies of all time, Databricks provides a unified "data lakehouse" platform for managing all data storage, analytics &amp; AI. Databricks raised $14M from Andreessen Horowitz (Lead) and NEA.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Front (Series D) -->
+                <a target="_blank" href="https://bestpitchdeck.com/front-series-d?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://frontapp.com"
+                                alt="Front logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Front (Series D)</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$65M</span>
+                                    <span>2022</span>
+                                    <span>•</span>
+                                    <span>Series D</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Customer service platform Front streamlines all channels (email, SMS, chat, social media) into one unified inbox for client-facing teams. Front raised $65M from Sequoia Capital (Lead), DFJ Growth, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Talkdesk -->
+                <a target="_blank" href="https://bestpitchdeck.com/talkdesk?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://talkdesk.com"
+                                alt="Talkdesk logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Talkdesk</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$3.15M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Contact center platform Talkdesk helps consolidate and automate customer service interactions across channels. Talkdesk raised $3.15M from Storm Ventures (Lead) and 500 Startups with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Aisera -->
+                <a target="_blank" href="https://bestpitchdeck.com/aisera?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://www.aisera.com"
+                                alt="Aisera logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Aisera</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$90M</span>
+                                    <span>2022</span>
+                                    <span>•</span>
+                                    <span>Series D</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Aisera's agentic AI helps automate ticket resolution across IT, HR, customer service, and more. Automation Anywhere announced its acquisition of Aisera in November 2025. Aisera raised $90M from Goldman Sachs (Lead), True Ventures, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Everside Health -->
+                <a target="_blank" href="https://bestpitchdeck.com/everside-health?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://www.eversidehealth.com"
+                                alt="Everside Health logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Everside Health</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$164M</span>
+                                    <span>2022</span>
+                                    <span>•</span>
+                                    <span>Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Everside Health is one of the top direct primary care providers in the US, offering low/no-cost access to physicians and 24/7 virtual care. Everside Health raised $164M from GIC (Lead), Searchlight Capital, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Databricks Series D -->
+                <a target="_blank" href="https://bestpitchdeck.com/databricks-series-d?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://databricks.com"
+                                alt="Databricks logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Databricks Series D</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$140M</span>
+                                    <span>2017</span>
+                                    <span>•</span>
+                                    <span>Series D</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">One of the highest-valued private companies of all time, Databricks provides a unified "data lakehouse" platform for managing all data storage, analytics &amp; AI. Databricks raised $140M from New Enterprise Associates
+                            (Lead), Andreessen Horowitz, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Wealthsimple -->
+                <a target="_blank" href="https://bestpitchdeck.com/wealthsimple?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://wealthsimple.com"
+                                alt="Wealthsimple logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Wealthsimple</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$1.9M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Canadian fintech platform Wealthsimple offers financial products including high-yield savings (HYSA), commission-free trading, automated 'robo-advisor' and more. Wealthsimple raised $1.9M from Power Financial (Lead) and Portag3 Ventures with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Magic Leap -->
+                <a target="_blank" href="https://bestpitchdeck.com/magic-leap?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://magicleap.com"
+                                alt="Magic Leap logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Magic Leap</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$50M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Next-gen wearables startup Magic Leap develops augmented reality (AR) hardware and software for enterprise use cases. Magic Leap raised $50M from Andreessen Horowitz (Lead), Obvious Ventures, and
+                            Google with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2G,
+                                B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- OpenDoor -->
+                <a target="_blank" href="https://bestpitchdeck.com/opendoor?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://opendoor.com"
+                                alt="OpenDoor logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    OpenDoor</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$10M</span>
+                                    <span>2014</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Opendoor operates as an "iBuyer" (instant buyer) and online real estate marketplace that makes selling your home convenient and fast. The company was valued over $4.8 billion at IPO ($NASDAQ:OPEN). OpenDoor raised $10M from Khosla Ventures (Lead), General Catalyst, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">C2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- TransferWise -->
+                <a id="deck-wise" target="_blank" href="https://bestpitchdeck.com/transferwise?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://wise.com"
+                                alt="Wise logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    TransferWise</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$1.3M</span>
+                                    <span>2012</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Payments startup Wise (previously TransferWise) makes transferring money abroad simple and affordable. The company was valued over $11 billion at IPO ($LON:WISE). TransferWise raised $1.3M from IA Ventures (Lead), Index Ventures, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B,
+                                B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- OpenTest (Loom) -->
+                <a target="_blank" href="https://bestpitchdeck.com/opentest-loom?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=https://www.loom.com"
+                                alt="OpenTest (Loom) logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    OpenTest (Loom)</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$600k</span>
+                                    <span>2016</span>
+                                    <span>•</span>
+                                    <span>Pre-Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Loom (originally named OpenTest) is a video messaging tool that enables teams to communicate asynchronously with short recorded messages. Loom was acquired by Atlassian for $975 million in 2023. OpenTest raised $600k from Andreessen Horowitz (Lead) and Slack Fund with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Wise -->
+                <a target="_blank" href="https://bestpitchdeck.com/wise?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://wise.com"
+                                alt="Wise logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Wise</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$12M</span>
+                                    <span>2020</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Fintech startup Wise specializes in global / cross-border payments and currency conversion. The company was valued over $11 billion at IPO ($LON:WISE). Wise raised $12M from Lead Edge Capital (Lead), Vitruvian Partners, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Wayflyer Series A -->
+                <a target="_blank" href="https://bestpitchdeck.com/wayflyer-series-a?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://www.wayflyer.com"
+                                alt="Wayflyer logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Wayflyer Series A</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$10M</span>
+                                    <span>2020</span>
+                                    <span>•</span>
+                                    <span>Series A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Wayflyer helps eCommerce and CPG brands scale efficiently with a revenue-based financing platform that provides non-dilutive working capital. Wayflyer raised $10M from DST Global Partners (Lead), QED Investors, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Wayflyer Seed -->
+                <a target="_blank" href="https://bestpitchdeck.com/wayflyer?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://www.wayflyer.com"
+                                alt="Wayflyer logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Wayflyer Seed</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$10M</span>
+                                    <span>2020</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Wayflyer's revenue-based financing platform provides non-dilutive capital to help eCommerce brands scale. Wayflyer raised $10M from QED Investors (Lead), Speedinvest, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Alan -->
+                <a target="_blank" href="https://bestpitchdeck.com/alan?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://alan.com"
+                                alt="Alan logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Alan</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$54M</span>
+                                    <span>2020</span>
+                                    <span>•</span>
+                                    <span>Series C</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Digital health startup Alan offers a unified app for unifies insurance, preventative care, and wellness with 24/7 virutal care and instant reimbursements. Alan raised $54M from Index Ventures (Lead), Temasek, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- AppNexus -->
+                <a target="_blank" href="https://bestpitchdeck.com/appnexus?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="./appnexus.com.jpg" alt="AppNexus logo"
+                                class="w-12 h-12 mr-2 rounded-lg object-contain" onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    AppNexus</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$2.5M</span>
+                                    <span>2007</span>
+                                    <span>•</span>
+                                    <span>Seed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">AppNexus is a programmatic advertising marketplace and provides underlying infrastructure for ad exchanges. It was acquired by Xandr (now owned by Microsoft) in 2018. AppNexus raised $2.5M from Venrock (Lead), Kodiak Venture Partners, and
+                            others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Mollie -->
+                <a target="_blank" href="https://bestpitchdeck.com/mollie?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://www.mollie.com"
+                                alt="Mollie logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Mollie</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$106M</span>
+                                    <span>2020</span>
+                                    <span>•</span>
+                                    <span>Series B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Fintech startup Mollie streamlines online payments for businesses across Europe and the UK. Mollie raised $106M from TCV (Lead), Blackstone, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- GoStudent -->
+                <a target="_blank" href="https://bestpitchdeck.com/gostudent?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://www.gostudent.org"
+                                alt="GoStudent logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    GoStudent</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$244M</span>
+                                    <span>2021</span>
+                                    <span>•</span>
+                                    <span>Series C</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Online tutoring platform GoStudent connects learners of all ages (from K-12 through college and adulthood) with private tutors for 1-on-1 lessons. GoStudent raised $244M from Prosus (Lead), Coatue, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Mambu -->
+                <a target="_blank" href="https://bestpitchdeck.com/mambu?ref=upd.com"
+                    class="deck-card group block bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-300 dark:hover:border-neutral-600 hover:shadow-lg hover:shadow-accent-500/5">
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;size=128&amp;url=http://www.mambu.com"
+                                alt="Mambu logo" class="w-12 h-12 mr-2 rounded-lg object-contain"
+                                onerror="this.style.display='none'">
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                                    Mambu</h3>
+                                <div class="flex items-center gap-2 text-xs text-neutral-500">
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">$135M</span>
+                                    <span>2021</span>
+                                    <span>•</span>
+                                    <span>Series E</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-4 leading-normal">Mambu's banking SaaS platform empowers financial institutions ranging from banks to fintech startups to streamline lending and deposit services. Mambu raised $135M from TCV (Lead), Bessemer Venture Partners, and others with this deck.</p>
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="text-xs text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">B2B2C</span>
+                            <span class="text-sm font-medium text-accent-600 dark:text-accent-400">View deck →</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- View More CTA -->
+            <div class="mt-12 text-center">
+                <a target="_blank" href="https://bestpitchdeck.com/unicorn?ref=upd.com"
+                    class="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-neutral-900 dark:border-white text-neutral-900 dark:text-white font-semibold hover:bg-neutral-900 hover:text-white dark:hover:bg-white dark:hover:text-neutral-900 transition-all">
+                    View more
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-light tracking-tight mb-8 text-center">
+                Frequently Asked <span class="text-accent-600 dark:text-accent-400">Questions</span>
+            </h2>
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="group bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg">
+                        Why did you make this?
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-neutral-600 dark:text-neutral-400 space-y-4">
+                        <p>How often do you have the chance to learn directly from self-made billionaires, or get an unfiltered look behind the curtain of the biggest startups of all time? With these real-world pitch decks from unicorn startups, you can do exactly that. Whether you're a startup veteran or a first-time founder, you'll find a treasure trove of insights by reading these slides.</p>
+                        <p>This goes beyond presentation tips and fundraising tactics: look carefully and you'll find common patterns in the competitive moats, operational frameworks, GTM strategies, and positioning that helped build multi-billion-dollar legacies (not quite the entire "formula for success," but more than you'll find anywhere else).</p>
+                        <p>These decks were generously shared publicly by founders of some of the most successful startups of all time (and a few infamous flops — we're looking at you, <a class="text-accent-600 dark:text-accent-400" href="#deck-wework">WeWork</a> and <a class="text-accent-600 dark:text-accent-400" href="#deck-peloton">Peloton</a>). As such, we believe this knowledge belongs in the public domain, not behind paywalls, subscriptions, or engagement farmers who ask you to comment and follow for "a list of pitch decks that raised $XXXM." That's why this database is and will always remain free, no sign-in required.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg">
+                        How can I get the most out of these pitch deck examples?
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-neutral-600 dark:text-neutral-400 space-y-4">
+                        <p>Pay close attention to how top founders were able to frame their vision, highlight a gap in the market, and showcase traction.</p>
+                        <p>You'll find common themes in pitches across industries, as well as key differences in how companies in the same category (e.g. <a class="text-accent-600 dark:text-accent-400" href="#deck-doordash">Doordash</a> vs. <a class="text-accent-600 dark:text-accent-400" href="#deck-postmates">Postmates</a>) positioned themselves differently.</p>
+                        <p>A good place to start is the "must-see slides" section below, which highlights standout examples, but you'll want to delve deeper into reading the full decks.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg">
+                        Are these the actual decks used by these companies to raise funding?
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-neutral-600 dark:text-neutral-400 space-y-4">
+                        <p>Yes, these are the real pitch decks (often shared publicly by founders and investors on blogs and social media).</p>
+                        <p>All of these decks were used in actual fundraising rounds (ranging from seed to Series E), except for just a couple exceptions (<a class="text-accent-600 dark:text-accent-400" href="#deck-facebook">Facebook</a> and <a class="text-accent-600 dark:text-accent-400"  href="#deck-snapchat">Snapchat's</a> decks appear to be early sales decks).</p>
+                        <p>You may notice some decks have been lightly edited or redacted (the founders often choose to remove sensitive financials or trade secrets), but the core content and structure remain intact.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg">
+                        Can I share these decks?
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-neutral-600 dark:text-neutral-400 space-y-4">
+                        <p>All decks linked here are already publicly available in the public domain, so feel free to share this page or individual deck links (we only ask that you link or credit our site as the source if you do so).</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pitch Deck Templates CTA -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="relative overflow-hidden rounded-3xl bg-accent-50 dark:bg-accent-900/20 border border-accent-200 dark:border-accent-800 p-8 sm:p-10"
+                style="background-image: url(./pitch-deck-templates.png); background-position: bottom right; background-size: 45%; background-repeat: no-repeat;">
+                <div class="max-w-xl">
+                    <h2 class="text-2xl sm:text-3xl font-light tracking-tight mb-4">
+                        Ready to create your own pitch deck?
+                    </h2>
+                    <p class="text-neutral-600 dark:text-neutral-400 mb-6">
+                        Put your best foot forward with <u>the only pitch deck templates designed by VC-backed founders</u>: made by experts who raised millions personally, and worked with hundreds of startups (and VC funds) to collectively raise billions.
+                    </p>
+                    <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400 mb-8">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-accent-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Trusted by 6,500+ customers
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-accent-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            50+ industry-specific templates
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-accent-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Built-in expert guidance
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-accent-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Easy-to-edit (PPT, GSlides)
+                        </span>
+                    </div>
+                    <a target="_blank" href="https://bestpitch.es?ref=unicornpitchdeck.com"
+                        class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent-600 hover:bg-accent-700 text-white font-semibold transition-colors">
+                        Browse Pitch Deck Templates
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-neutral-200 dark:border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-6">
+                    <a target="_blank" href="https://twitter.com/pitchdecks"
+                        class="text-neutral-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a> <a target="_blank" href="https://tiktok.com/@pitchdecks"
+                        class="text-neutral-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://youtube.com/@pitchdecks"
+                        class="text-neutral-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://instagram.com/pitchdecks"
+                        class="text-neutral-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://pinterest.com/pitchdecks"
+                        class="text-neutral-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p class="text-md">
+                        Powered by <a target="_blank" href="https://bestpitchdeck.com?ref=upd.com"
+                            class="font-semibold text-accent-900 dark:text-accent-200 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">BestPitchDeck.com</a>
+                    </p>
+                    <p class="text-sm text-neutral-500">
+                        Browse <a target="_blank" href="https://bestpitchdeck.com?ref=upd.com">thousands of pitch
+                            decks</a> free &rarr;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Check for saved preference or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        const decksGrid = document.getElementById('decks-grid');
+        const deckCount = document.getElementById('deck-count');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const cards = decksGrid.querySelectorAll('a.deck-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = '';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            deckCount.textContent = `${visibleCount} deck${visibleCount !== 1 ? 's' : ''}`;
+        });
+
+        // Smooth scroll for anchor links with highlight effect
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Highlight effect
+                    if (targetId.startsWith('#deck-')) {
+                        target.classList.add('ring-4', 'ring-accent-400', 'ring-offset-2');
+                        setTimeout(() => {
+                            target.classList.remove('ring-4', 'ring-accent-400', 'ring-offset-2');
+                        }, 1500);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
