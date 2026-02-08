@@ -141,6 +141,36 @@
         .dark .grain::before {
             opacity: 0.03;
         }
+
+        /* CTA background image */
+        .cta-bg {
+            background-image: url(./pitch-deck-templates.png);
+            background-position: bottom right;
+            background-size: 45%;
+            background-repeat: no-repeat;
+        }
+
+        /* Hide scrollbar on stats section (mobile) */
+        .stats-scroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .stats-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 639px) {
+            /* Faster logo scroll on mobile */
+            .logo-scroll {
+                animation-duration: 15s;
+            }
+
+            /* Larger CTA background on mobile (1.2x) */
+            .cta-bg {
+                background-size: 70%;
+            }
+        }
     </style>
 </head>
 
@@ -152,7 +182,7 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <a target="_blank" href="/" class="flex items-center gap-2">
-                    <img src="unicorn-pitch-decks.svg" alt="Unicorn Pitch Decks" class="w-6 h-6 sm:w-8 sm:h-8">
+                    <img src="unicorn-pitch-decks.svg" alt="Unicorn Pitch Decks" class="w-7 h-7 sm:w-8 sm:h-8">
                     <span class="font-heading text-base sm:text-xl font-semibold">Unicorn Pitch Decks</span>
                 </a>
 
@@ -186,7 +216,7 @@
                 50+ Billion-Dollar Decks
             </div>
 
-            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6">
+            <h1 class="font-heading text-5xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6 max-w-[320px] sm:max-w-none mx-auto">
                 <span class="text-accent-600 dark:text-accent-400">Unicorn</span> Startup Pitch Decks
             </h1>
             <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-4xl mx-auto mb-8">
@@ -374,7 +404,7 @@
 
     <!-- Stats -->
     <section class="py-6 border-y border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-auto stats-scroll">
             <div
                 class="flex items-center justify-start sm:justify-center gap-x-6 text-base text-neutral-700 dark:text-neutral-300 whitespace-nowrap min-w-max">
                 <span>Seed to Series E round</span>
@@ -391,7 +421,7 @@
     <!-- Best Slides Section -->
     <section class="py-16 px-4 sm:px-6 lg:px-8 bg-neutral-50 dark:bg-neutral-900/50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl sm:text-3xl font-light tracking-tight mb-4 text-center">
+            <h2 class="text-3xl sm:text-3xl font-light tracking-tight mb-4 text-center max-w-[280px] sm:max-w-none mx-auto">
                 <span class="text-accent-600 dark:text-accent-400">Must-see</span> slides from unicorn pitch
                 decks</span>
             </h2>
@@ -399,17 +429,14 @@
                 Here are some of our favorite slides from pitch decks that raised early funding for billion-dollar startups. <a href="#decks" class="text-accent-600 dark:text-accent-400 hover:underline">Skip ahead to the full list of decks →</a>
             </p>
             <!-- Template CTA Banner -->
-            <div class="max-w-4xl mx-auto mb-10">
+            <div class="max-w-[90%] sm:max-w-4xl mx-auto mb-10">
                 <a target="_blank" href="https://bestpitch.es/turnkey-pitch-deck-template?ref=unicornpitchdeck.com"
-                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 px-5 py-4 rounded-xl bg-neutral-900 dark:bg-neutral-800 hover:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors">
+                    class="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between gap-3 sm:gap-4 px-4 sm:px-5 py-4 sm:py-4 rounded-xl bg-neutral-900 dark:bg-neutral-800 hover:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors">
                     <!-- Mobile layout -->
-                    <div class="sm:hidden">
-                        <span class="text-white font-semibold text-base block mb-1">Raising VC funding?</span>
-                        <span class="text-neutral-300 text-sm">Try the <span class="text-accent-400">only pitch deck template made by VC-backed founders</span>.</span>
-                    </div>
+                    <span class="sm:hidden text-white text-sm leading-snug"><span class="font-medium">Raising VC funding?</span> Browse <span class="text-accent-400">pitch deck templates made by VC-backed founders</span>.</span>
                     <!-- Desktop layout -->
-                    <span class="hidden sm:block text-white">Raising VC funding? Try the <u>only pitch deck template made by VC-backed founders</u>.</span>
-                    <span class="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent-600 hover:bg-accent-700 text-white text-sm sm:text-base font-semibold whitespace-nowrap transition-colors">
+                    <span class="hidden sm:block text-white"><span class="font-medium">Raising VC funding?</span> Browse <u class="text-accent-400">pitch deck templates made by VC-backed founders</u>.</span>
+                    <span class="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-accent-600 hover:bg-accent-700 text-white text-sm sm:text-base font-semibold whitespace-nowrap transition-colors">
                         Download &rarr;
                     </span>
                 </a>
@@ -621,7 +648,7 @@
     <section id="decks" class="py-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="flex items-center justify-between mb-8">
-                <h2 class="text-2xl sm:text-3xl font-light tracking-tight">
+                <h2 class="text-3xl sm:text-3xl font-light tracking-tight max-w-[280px] sm:max-w-none">
                     Browse pitch decks from <span class="text-accent-600 dark:text-accent-400">billion-dollar</span>
                     startups <span class="text-neutral-500">↓</span>
                 </h2>
@@ -2162,7 +2189,7 @@
     <!-- FAQ Section -->
     <section class="py-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl sm:text-3xl font-light tracking-tight mb-8 text-center">
+            <h2 class="text-3xl sm:text-3xl font-light tracking-tight mb-8 text-center max-w-[280px] sm:max-w-none mx-auto">
                 Frequently Asked <span class="text-accent-600 dark:text-accent-400">Questions</span>
             </h2>
             <div class="space-y-4">
@@ -2230,10 +2257,9 @@
     <!-- Pitch Deck Templates CTA -->
     <section class="py-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <div class="relative overflow-hidden rounded-3xl bg-accent-50 dark:bg-accent-900/20 border border-accent-200 dark:border-accent-800 p-8 sm:p-10"
-                style="background-image: url(./pitch-deck-templates.png); background-position: bottom right; background-size: 45%; background-repeat: no-repeat;">
+            <div class="relative overflow-hidden rounded-3xl bg-accent-50 dark:bg-accent-900/20 border border-accent-200 dark:border-accent-800 p-8 sm:p-10 cta-bg">
                 <div class="max-w-xl">
-                    <h2 class="text-2xl sm:text-3xl font-light tracking-tight mb-4">
+                    <h2 class="text-3xl sm:text-3xl font-light tracking-tight mb-4 max-w-[280px] sm:max-w-none">
                         Ready to create your own pitch deck?
                     </h2>
                     <p class="text-neutral-600 dark:text-neutral-400 mb-6">
@@ -2259,7 +2285,8 @@
                     </div>
                     <a target="_blank" href="https://bestpitch.es?ref=unicornpitchdeck.com"
                         class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent-600 hover:bg-accent-700 text-white font-semibold transition-colors">
-                        Browse Pitch Deck Templates
+                        <span class="sm:hidden">Browse templates</span>
+                        <span class="hidden sm:inline">Browse Pitch Deck Templates</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
